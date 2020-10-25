@@ -1,0 +1,148 @@
+@font-face {
+  font-family: roboto;
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+a {
+  direction: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+
+body {
+  background-color: black;
+}
+
+.container-index {
+  background-image: url("../imgs/background_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  opacity: 0.4;
+}
+
+.context-index {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  max-width: 600px;
+  height: 90vh;
+  z-index: 2;
+}
+.context-index .logo-index .logo-span-index-prefix {
+  font-size: 3.2rem;
+  color: #5CAB7D;
+  font-weight: bold;
+}
+.context-index .logo-index .logo-span-index-name-part-1 {
+  color: white;
+  font-size: 1.5rem;
+}
+.context-index .logo-index .logo-span-index-name-part-2 {
+  color: white;
+  font-size: 1.5rem;
+}
+.context-index .title-index h1 {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.3em;
+}
+.context-index .title-index h1 span:nth-child(1) {
+  color: #5CAB7D;
+  text-shadow: black 0.1em 0.1em 0.3em;
+}
+.context-index .title-index h1 span:nth-child(2) {
+  color: #F2545B;
+  text-shadow: black 0.1em 0.1em 0.3em;
+}
+.context-index .description-index {
+  color: white;
+}
+.context-index .description-index p {
+  font-size: 1.2rem;
+}
+
+.butons-index button {
+  width: 100%;
+  background-color: #5CAB7D;
+  border: 0;
+  border-radius: 5px;
+  color: #ECE2D0;
+  height: 9vh;
+  padding: 0;
+  margin: 15px 0;
+  font-size: 1.1rem;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.butons-index button:hover {
+  opacity: 1;
+  font-size: 1.4rem;
+  border: 1px solid #5CAB7D;
+}
+
+.index-footer {
+  position: fixed;
+  bottom: 15px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  padding-right: 10px;
+  font-size: 50px;
+}
+.index-footer .m-facebook a {
+  color: #3b5998;
+  cursor: pointer;
+}
+.index-footer .m-whatsapp a {
+  color: #34af23;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .context-index {
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  .context-index .description-index p {
+    font-size: 1rem;
+  }
+
+  .index-footer {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    bottom: 0;
+    right: 0;
+  }
+  .index-footer .m-facebook {
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .context-index {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
