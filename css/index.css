@@ -138,7 +138,7 @@ body {
     padding-right: 10px;
   }
 }
-@media only screen and (orientation: portrait) {
+@media (orientation: portrait) {
   .context-index {
     top: 100px;
     left: 0;
