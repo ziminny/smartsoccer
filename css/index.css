@@ -5,6 +5,7 @@
 }
 a {
   direction: none;
+  text-decoration: none;
 }
 
 html, body {
@@ -71,26 +72,30 @@ body {
   font-size: 1.2rem;
 }
 
-.butons-index button:first-child, .butons-index button:nth-child(2) {
+.butons-index .btns-group a:first-child, .butons-index .btns-group a:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: #5CAB7D;
   border: 0;
   border-radius: 5px;
   color: #ECE2D0;
   height: 8vh;
-  padding: 0;
   margin: 9px 0;
   font-size: 1.1rem;
   text-shadow: black 0.1em 0.1em 0.2em;
   cursor: pointer;
   opacity: 0.9;
 }
-.butons-index button:hover {
+.butons-index .btns-group a:hover {
   opacity: 1;
   font-size: 1.4rem;
-  border: 1px solid #5CAB7D;
 }
-.butons-index button:nth-child(3) {
+.butons-index a:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   background-color: #D44638;
   border: 0;
@@ -104,7 +109,10 @@ body {
   cursor: pointer;
   opacity: 0.9;
 }
-.butons-index button:last-child {
+.butons-index a:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   background-color: #3b5998;
   border: 0;
@@ -117,6 +125,10 @@ body {
   text-shadow: black 0.1em 0.1em 0.2em;
   cursor: pointer;
   opacity: 0.9;
+}
+.butons-index a:hover {
+  opacity: 1;
+  font-size: 1.4rem;
 }
 
 @media only screen and (max-width: 800px) {
@@ -147,10 +159,24 @@ body {
   .context-index .logo-index .logo-span-index-name-part-2 {
     font-size: 1.2rem;
   }
-  .context-index .butons-index button {
-    font-size: 12px;
+  .context-index .butons-index .btns-group {
+    display: flex;
+  }
+  .context-index .butons-index .btns-group a {
     height: 40px;
-    margin: 5px auto;
+    margin: auto;
+    font-size: 0.8rem;
+  }
+  .context-index .butons-index .btns-group a:first-child {
+    margin-right: 10px;
+    font-size: 0.8rem;
+  }
+  .context-index .butons-index a:last-child, .context-index .butons-index a:nth-child(2) {
+    font-size: 0.8rem;
+    height: 40px;
+  }
+  .context-index .butons-index a:last-child {
+    margin-top: 10px auto;
   }
 }
 @media only screen and (max-width: 281px) {
@@ -169,7 +195,7 @@ body {
   .context-index .logo-index .logo-span-index-name-part-2 {
     font-size: 0.9rem;
   }
-  .context-index .butons-index button {
+  .context-index .butons-index a {
     font-size: 12px;
     height: 55px;
   }

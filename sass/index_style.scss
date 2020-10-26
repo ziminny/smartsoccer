@@ -5,6 +5,7 @@
 }
 a {
   direction: none;
+  text-decoration: none;
 }
 html , body {
   margin: 0;
@@ -82,28 +83,35 @@ background-color: black;
 }
 
   .butons-index {
-      button:first-child ,button:nth-child(2){
+    .btns-group {
+      a:first-child ,a:last-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         background-color: $logoColor;
         border: 0;
         border-radius: 5px;
         color:$textColorSecundary;
         height:8vh;
-        padding: 0;
         margin: 9px 0;
         font-size: 1.1rem;
         text-shadow: black 0.1em 0.1em 0.2em;
         cursor: pointer;
         opacity: 0.9
       }
-      button:hover {
+      a:hover {
         opacity: 1;
         font-size: 1.4rem;
-        border: 1px solid $logoColor;
 
       }
+    }
 
-      button:nth-child(3){
+
+      a:nth-child(2){
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         background-color: $gmail;
         border: 0;
@@ -118,7 +126,10 @@ background-color: black;
         opacity: 0.9
       }
 
-      button:last-child{
+      a:last-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         background-color: $facebook;
         border: 0;
@@ -131,6 +142,11 @@ background-color: black;
         text-shadow: black 0.1em 0.1em 0.2em;
         cursor: pointer;
         opacity: 0.9
+      }
+      a:hover {
+        opacity: 1;
+        font-size: 1.4rem;
+
       }
 }
 
@@ -177,10 +193,27 @@ background-color: black;
         }
 
         .butons-index {
-            button{
-              font-size: 12px;
+            .btns-group {
+              display: flex;
+
+              a{
+                height: 40px;
+                margin:auto;
+                font-size: 0.8rem;
+              }
+              a:first-child {
+                margin-right: 10px;
+                font-size: 0.8rem;
+
+              }
+            }
+            a:last-child , a:nth-child(2){
+              font-size: 0.8rem;
               height: 40px;
-              margin: 5px auto;
+
+            }
+            a:last-child {
+              margin-top: 10px auto;
             }
           }
       }
@@ -211,7 +244,7 @@ background-color: black;
         }
 
         .butons-index {
-            button{
+            a{
               font-size: 12px;
               height: 55px;
             }
