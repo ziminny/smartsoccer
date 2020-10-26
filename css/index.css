@@ -138,38 +138,6 @@ body {
     padding-right: 10px;
   }
 }
-@media (orientation: portrait) {
-  .context-index {
-    top: 100px;
-    left: 0;
-    max-width: 100%;
-    padding: 0 70px;
-    border: 1px solid red;
-    text-align: center;
-  }
-  .context-index .description-index {
-    color: white;
-  }
-  .context-index .description-index p {
-    font-size: 3.5rem;
-  }
-  .context-index .title-index h1 {
-    font-size: 5rem;
-  }
-  .context-index .logo-index .logo-span-index-prefix {
-    font-size: 6rem;
-  }
-  .context-index .logo-index .logo-span-index-name-part-1 {
-    font-size: 3rem;
-  }
-  .context-index .logo-index .logo-span-index-name-part-2 {
-    font-size: 3rem;
-  }
-  .context-index .butons-index button {
-    margin-bottom: 50px;
-    font-size: 40px;
-  }
-}
 @media only screen and (max-width: 600px) {
   .context-index {
     padding-left: 30px;

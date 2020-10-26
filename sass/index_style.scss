@@ -173,55 +173,7 @@ background-color: black;
        }
   }
 
-  @media (orientation:portrait) {
 
-    .context-index {
-      top: 100px;
-      left: 0;
-      max-width: 100%;
-      padding: 0 70px;
-      border: 1px solid red;
-      text-align: center;
-
-        .description-index {
-           color: $textColor;
-
-             p {
-               font-size: 3.5rem;
-             }
-           }
-
-                .title-index {
-                       h1 {
-                         font-size: 5rem;
-
-                      }
-               }
-               .logo-index {
-                     .logo-span-index-prefix {
-                         font-size: 6rem;
-
-                     }
-                     .logo-span-index-name-part-1 {
-
-                       font-size: 3rem;
-                     }
-                     .logo-span-index-name-part-2 {
-
-                       font-size: 3rem;
-                     }
-               }
-
-               .butons-index {
-                   button{
-                     margin-bottom: 50px;
-                     font-size: 40px;
-                   }
-                 }
-    }
-
-
-  }
 
   @media only screen and (max-width: 600px) {
 
