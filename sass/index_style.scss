@@ -62,14 +62,6 @@ background-color: black;
               font-size: 2.5rem;
               color: $textColor;
               text-shadow: black 0.1em 0.1em 0.3em;
-               // background-image: url("../imgs/logo.png");
-               // background-position:right;
-               // background-repeat: no-repeat;
-               // opacity: 0.8;
-               // width: 550px;
-               // height: 250px;
-               // background-size:contain;
-               // border: 1px solid red;
                 span:nth-child(1) {
                   color: $logoColor;
                   text-shadow:$shadowTitle;
@@ -107,8 +99,6 @@ background-color: black;
       }
       button:hover {
         opacity: 1;
-        //background-color: $textColor;
-        //color: black;
         font-size: 1.4rem;
         border: 1px solid $logoColor;
 
