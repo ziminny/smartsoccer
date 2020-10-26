@@ -149,7 +149,7 @@ background-color: black;
 
             .description-index {
                   p {
-                   font-size: 0.5rem;
+                   font-size: 0.9rem;
                  }
 
            }
@@ -173,14 +173,70 @@ background-color: black;
        }
   }
 
-@media only screen and (max-width: 337px) {
-}
+
 
   @media only screen and (max-width: 600px) {
 
     .context-index  {
         padding-left: 30px;
         padding-right: 30px;
+
+        .logo-index {
+              .logo-span-index-prefix {
+                  font-size: 2.8rem;
+
+              }
+              .logo-span-index-name-part-1 {
+
+                font-size: 1.2rem;
+              }
+              .logo-span-index-name-part-2 {
+
+                font-size: 1.2rem;
+              }
+        }
+
+        .butons-index {
+            button{
+              font-size: 12px;
+              height: 55px;
+            }
+          }
       }
 
+
+
+  }
+
+
+  @media only screen and (max-width: 281px) {
+    .context-index  {
+        padding-left: 20px;
+        padding-right: 30px;
+        width: 237px;
+        text-align: center;
+      
+
+        .logo-index {
+              .logo-span-index-prefix {
+                  font-size: 1.0rem;
+
+              }
+              .logo-span-index-name-part-1 {
+
+                font-size: 0.9rem;
+              }
+              .logo-span-index-name-part-2 {
+
+                font-size: 0.9rem;
+              }
+        }
+
+        .butons-index {
+            button{
+              font-size: 12px;
+              height: 55px;
+            }
+          }
+      }
   }
