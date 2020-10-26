@@ -14,6 +14,7 @@ html , body {
     font-family:roboto;
 }
 
+
 body {
 background-color: black;
 }
@@ -81,15 +82,15 @@ background-color: black;
 }
 
   .butons-index {
-      button{
+      button:first-child ,button:nth-child(2){
         width: 100%;
         background-color: $logoColor;
         border: 0;
         border-radius: 5px;
         color:$textColorSecundary;
-        height:9vh;
+        height:8vh;
         padding: 0;
-        margin: 15px 0;
+        margin: 9px 0;
         font-size: 1.1rem;
         text-shadow: black 0.1em 0.1em 0.2em;
         cursor: pointer;
@@ -100,6 +101,36 @@ background-color: black;
         font-size: 1.4rem;
         border: 1px solid $logoColor;
 
+      }
+
+      button:nth-child(3){
+        width: 100%;
+        background-color: $gmail;
+        border: 0;
+        border-radius: 5px;
+        color:$textColorSecundary;
+        height:8vh;
+        padding: 0;
+        margin: 9px 0;
+        font-size: 1.1rem;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        cursor: pointer;
+        opacity: 0.9
+      }
+
+      button:last-child{
+        width: 100%;
+        background-color: $facebook;
+        border: 0;
+        border-radius: 5px;
+        color:$textColorSecundary;
+        height:8vh;
+        padding: 0;
+        margin: 9px 0;
+        font-size: 1.1rem;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        cursor: pointer;
+        opacity: 0.9
       }
 }
 
@@ -148,7 +179,8 @@ background-color: black;
         .butons-index {
             button{
               font-size: 12px;
-              height: 55px;
+              height: 40px;
+              margin: 5px auto;
             }
           }
       }

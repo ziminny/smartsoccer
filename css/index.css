@@ -71,15 +71,15 @@ body {
   font-size: 1.2rem;
 }
 
-.butons-index button {
+.butons-index button:first-child, .butons-index button:nth-child(2) {
   width: 100%;
   background-color: #5CAB7D;
   border: 0;
   border-radius: 5px;
   color: #ECE2D0;
-  height: 9vh;
+  height: 8vh;
   padding: 0;
-  margin: 15px 0;
+  margin: 9px 0;
   font-size: 1.1rem;
   text-shadow: black 0.1em 0.1em 0.2em;
   cursor: pointer;
@@ -89,6 +89,34 @@ body {
   opacity: 1;
   font-size: 1.4rem;
   border: 1px solid #5CAB7D;
+}
+.butons-index button:nth-child(3) {
+  width: 100%;
+  background-color: #D44638;
+  border: 0;
+  border-radius: 5px;
+  color: #ECE2D0;
+  height: 8vh;
+  padding: 0;
+  margin: 9px 0;
+  font-size: 1.1rem;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.butons-index button:last-child {
+  width: 100%;
+  background-color: #3b5998;
+  border: 0;
+  border-radius: 5px;
+  color: #ECE2D0;
+  height: 8vh;
+  padding: 0;
+  margin: 9px 0;
+  font-size: 1.1rem;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 @media only screen and (max-width: 800px) {
@@ -121,7 +149,8 @@ body {
   }
   .context-index .butons-index button {
     font-size: 12px;
-    height: 55px;
+    height: 40px;
+    margin: 5px auto;
   }
 }
 @media only screen and (max-width: 281px) {
